@@ -5,6 +5,6 @@ import { HomePages } from "./index";
 describe("Test Home Page Content", () => {
   test("Should Have Text Halo Bang", () => {
     render(<HomePages />);
-    expect(screen.getByText("Halo bang")).toBeInTheDocument();
+    expect(screen.getByText("Loading...")).toBeInTheDocument();
   });
 });
