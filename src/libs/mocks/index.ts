@@ -16,14 +16,7 @@ export function makeServer({ environment = "test" }): void {
 
   serverState.logging = true;
 
-<<<<<<< HEAD
-  serverState.post(
-    `${import.meta.env.VITE_API_URL}/:any`,
-    () => new Promise((): void => {}),
-  );
-=======
   serverState.post(`${import.meta.env.VITE_API_URL}/:any`, () => new Promise((): void => {}));
->>>>>>> 0120e94 (improve: add new params)
 
   serverState.urlPrefix = import.meta.env.API_PREFIX ?? "/api";
 
